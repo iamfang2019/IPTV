@@ -31,10 +31,10 @@ sudo ln -sf /usr/local/bin/chrome-headless-shell-linux64/chrome-headless-shell /
 sudo chmod +x /usr/local/bin/chromedriver
 - name: Run script
 run: python ${{ github.workspace }}/IPTV.py
-- name: 提交更改
+- name: iptv
 run: |
-git config --local user.email "你自己的github邮箱"
-git config --local user.name "你自己的github用户名"
+git config --local user.email "sfang2008@126.com"
+git config --local user.name "iamfang2019"
 git add .
 git commit *.txt -m "Add generated file"
 git push -f
